@@ -189,3 +189,78 @@ body {
 .content ul li{
     margin-bottom: 20px;
 }
+
+/* latest related styles */
+.latest h2{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.latest p{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.deals-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 25px;
+}
+
+.left-column{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.deal-card{
+    width: 367px;
+    height: 201px;
+    border-radius: 14px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.deal-card .shop{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 70px;
+    text-decoration: underline;    
+}
+
+.right-column{
+     width: 748px;
+    height: 423px;
+    border-radius: 14px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 270px;
+    font-size: 1.25rem;
+    font-weight: bold;   
+}
+
+.right-column .shop{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 70px;
+    text-decoration: underline;
+}
