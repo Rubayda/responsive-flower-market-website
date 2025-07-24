@@ -1,84 +1,191 @@
-/* Reset and base styles */
-* {
-  margin: 0;
-  padding: 0;
-  /* box-sizing: border-box; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Font family */
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+/* body related styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #fdfdfd;
-  color: #333;
+    background-color: #f5f8ff;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #fff;
-  /* border-bottom: 1px solid #ddd; */
+/* shared styles */
+.btn-primary{
+    background-color: #E95A08;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 19px 80px;
+    border:none;
+    margin-bottom: 30px;
 }
 
-.logo img {
-  height: 50px;
+.text-primary{
+    font-size: 1.375rem;
+    color: #8a8b90;
 }
 
-.nav-links a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+.primary-color{
+    color: #E95A08;
 }
 
-.nav-links .cart {
-  font-weight: bold;
+.display-flex{
+    display: flex;
 }
 
-/* Hero Section */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 40px;
-  background-color: #fefefe;
+.dark-1{
+    color: #252432;
 }
 
-.hero-text {
-  flex: 1;
-  padding-right: 40px;
+.light-gray{
+    color: #8987A1;
 }
 
-.hero-text h1 {
-  font-size: 48px;
-  line-height: 1.2;
-  margin-bottom: 20px;
+.medium{
+    font-weight: 500;
 }
 
-.hero-text .bold {
-  font-weight: 700;
-  color: #333;
+/* nav related styles */
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.hero-text .highlight {
-  color: #e55233;
-  font-weight: 700;
+.logo{
+    width: 135px;
+    height: 82px;
 }
 
-.hero-text p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.6;
+.nav-links a{
+    text-decoration: none;
+    
+    
 }
 
-.hero-image {
-  flex: 1;
-  text-align: right;
+.nav-item{
+    list-style: none;
+    margin-left: 48px;
 }
 
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+/* banner related style */
+.banner{
+    margin: 120px 0;
+    
+}
+
+.banner-text{
+    padding-top: 48px;
+}
+
+.highlight{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+/* plants section related style */
+.plants-text{
+    text-align: center;
+    margin-bottom: 49px;
+}
+
+.plant-title{
+    font-size: 3rem;
+    font-weight:bold ;
+    margin-bottom: 16px;
+}
+
+.plants-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.para{
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #66676a;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.title{
+    font-size: 1.375rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/* plants lover related styles */
+.plants-lover{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.image-container{
+    position: relative;
+}
+
+.image-container img:first-child{
+    /* width: 100%; */
+    height: auto;
+    display: block;
+}
+
+.badge{
+    position: absolute;
+    top: -110px;
+    right: -100px;
+    width: 286px;
+    /* box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25); */
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content{
+    padding-top: 78px;
+    padding-left: 80px;
+    
+}
+
+.content h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content ul li{
+    margin-bottom: 20px;
 }
