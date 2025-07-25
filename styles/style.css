@@ -376,3 +376,135 @@ footer{
     gap: 24px;
 
 }
+
+/* -------Responsive media query -------- */
+@media screen and (max-width: 768px) {
+  /* Navbar responsive */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 0;
+  }
+
+  .nav-item {
+    margin-left: 0;
+  }
+
+  /* Hide Shop and About Us */
+  .one,
+  .two,
+  .three {
+    display: none;
+  }
+
+  .nav-links {
+    margin-left: auto;
+  }
+
+  /* Banner section */
+   .banner {
+    flex-direction: column-reverse;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .banner-text {
+    padding-top: 30px;
+  }
+
+  .highlight {
+    font-size: 2rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+
+  .banner-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .plants-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .plants-lover{
+    flex-direction: column;
+  }
+
+  .display-none{
+    display: none;
+  }
+
+
+  .deals-container {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .deal-card,
+  .right-column {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+  }
+
+  .deal-card,
+  .right-column {
+    border-radius: 0;
+  }
+
+  .left-column .deal-card:first-child {
+    border-radius: 14px;
+  }
+
+  .right-column {
+    border-radius: 14px;
+  }
+
+  .subscribe-section{
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+  }
+
+  .input-with-button{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+
+  .footer-left,
+  .footer-links,
+  .footer-column,
+  .footer-icons{
+    align-items: start;
+  }
+  .footer-column{
+    margin-bottom: 24px;
+  }
+
+}
+
+
+
+
+
+  
