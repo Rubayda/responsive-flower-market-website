@@ -15,7 +15,7 @@
 <body class="inter-normal">
   <header>
     <!--nav start-->
-    <nav class="navbar display-flex">
+    <nav class="navbar display-flex max-width">
       <div class="logo">
         <img src="assets/logo.png" alt="Faugei Logo">
       </div>
@@ -23,12 +23,12 @@
        <li class="nav-item"><a class=" dark-1 medium" href="#">Home</a></li>
        <li class="nav-item"><a class=" light-gray" href="#">Shop</a></li>
        <li class="nav-item"><a class=" light-gray" href="#">About us</a></li>
-       <li class="nav-item"><a class=" dark-1 medium" href="#">Cart (£56)</a></li>
+       <li class="nav-item"><a class=" dark-1 medium" href="#"> <img src="assets/shopping-cart.svg" alt=""> Cart (£56)</a></li>
        </ul>
     </nav>
       <!--nav end-->
       <!--banner section start-->
-     <section class="banner display-flex">
+     <section class="banner max-width">
         <div class="banner-text">
           <h1 class="highlight noto-serif-normal">ALWAYS <span class="primary-color">FRESH</span><br><span class="primary-color">FLOWERS</span></h1>
           <p class="text-primary">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that <br> are perfect for any occasion.</p>
@@ -41,7 +41,7 @@
   </header>
     <main>
       <!--plants section start-->
-       <section class="plants-section">
+       <section class="plants-section max-width">
         <div class="plants-text">
           <h1 class="plant-title noto-serif-normal"><span class="primary-color">Our</span> Plants</h1>
           <p class="text-primary">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
@@ -100,7 +100,7 @@
          <!--plants section end-->
 
          <!--plants-lover section start-->
-        <section class="plants-lover">
+        <section class="plants-lover max-width">
           <div class="image-container">
             <img src="assets/flower-store.png" alt="flower-store">
             <div><img src="assets/trusted-badge.png" alt="trusted-badge" class="badge"></div>
@@ -115,7 +115,9 @@
           </div>
         </section>
         <!--plants-lover section end-->
-       <section class="latest">
+
+        <!--start latest section-->
+       <section class="latest max-width">
          <h2 class="noto-serif-normal"><span class="primary-color">Latest</span> Deals</h2>
          <p class="description text-primary">
           Indulge your senses with the beauty and fragrance of our fresh flower shop. <br>
@@ -142,18 +144,21 @@
             </div>
           </div>
        </section>
-       <section class="subscribe">
-        <h2>Join the colorful Bunch</h2>
-        <form class="subscribe-form">
-          <input type="email" name="" id="" placeholder="Write email" required>
-          <button type="submit">Subscribe</button>
+       <!--end latest section-->
+      <section class="subscribe-section">
+        <h2 class="noto-serif-normal">Join the colorful Bunch</h2>
+        <form class="subscribe-form inter-normal">
+          <div class="input-with-button">
+            <input type="email" name="" id="" placeholder="Write email" required>
+          <button class="btn-primary" type="submit">Subscribe</button>
+          </div>
         </form>
        </section>
     </main>
     <footer>
         <div class="footer-left">
           <img src="assets/logo.png" alt="logo">
-          <p>Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+          <p class="text-primary">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
         </div>
         <div class="footer-links">
           <a href="">Home</a>
